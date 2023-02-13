@@ -326,25 +326,25 @@ export default function Home() {
           </div>
           <div className="mb-6 grid grid-cols-2 gap-4">
             <ChartStd
-              title="Sentiments Positive Chart"
+              title="Positive Sentiment Chart"
               category={chartSentimentData.positive.category}
               series={chartSentimentData.positive.series}
               type="bar"
             />
             <ChartStd
-              title="Sentiments Negative Chart"
+              title="Negative Sentiment Chart"
               category={chartSentimentData.negative.category}
               series={chartSentimentData.negative.series}
               type="bar"
             />
             <ChartStd
-              title="Sentiments Irrelevant Chart"
+              title="Irrelevant Sentiment Chart"
               category={chartSentimentData.irrelevant.category}
               series={chartSentimentData.irrelevant.series}
               type="bar"
             />
             <ChartStd
-              title="Sentiments Neutral Chart"
+              title="Neutral Sentiment Chart"
               category={chartSentimentData.neutral.category}
               series={chartSentimentData.neutral.series}
               type="bar"

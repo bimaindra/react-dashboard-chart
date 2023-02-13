@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  min-height: calc(100vh - 56px - 50px);
+}
+
+.box-border-red {
+  @apply border-r-red-200 hover:!border-r-red-400;
+}
+
+.box-border-green {
+  @apply border-r-green-200 hover:!border-r-green-400;
+}
+
+.box-border-blue {
+  @apply border-r-blue-200 hover:!border-r-blue-400;
+}
+
+.box-border-yellow {
+  @apply border-r-yellow-200 hover:!border-r-yellow-400;
+}

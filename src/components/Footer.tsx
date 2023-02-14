@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="border border-t-blue-100 bg-blue-50 p-4">
@@ -6,13 +8,13 @@ const Footer = () => {
           <p className="text-xs">Simple React Dashboard</p>
           <p className="text-xs">
             &copy; 2023 |{" "}
-            <a
+            <Link
               href="https://bimaindra.com"
               target="_blank"
               className="hover:underline"
             >
               @bimaindra
-            </a>
+            </Link>
           </p>
         </div>
       </div>

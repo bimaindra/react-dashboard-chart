@@ -39,7 +39,7 @@ export default function Home() {
     "Overwatch",
   ];
 
-  const SENTIMENT_DATA = ["Positive", "Negative", "Irrelevant", "Neutral"];
+  //const SENTIMENT_DATA = ["Positive", "Negative", "Irrelevant", "Neutral"];
 
   const getData = async (url: string) => {
     await fetch(url)
@@ -300,22 +300,30 @@ export default function Home() {
             />
             <BoxInfoPanel
               title="Positive Sentiment"
-              count={positiveDatas.length}
+              count={
+                datas.filter((data) => data.sentiment === "Positive").length
+              }
               color="green"
             />
             <BoxInfoPanel
               title="Negative Sentiment"
-              count={negativeDatas.length}
+              count={
+                datas.filter((data) => data.sentiment === "Negative").length
+              }
               color="red"
             />
             <BoxInfoPanel
               title="Irrelevant Sentiment"
-              count={irrelevantDatas.length}
+              count={
+                datas.filter((data) => data.sentiment === "Irrelevant").length
+              }
               color="yellow"
             />
             <BoxInfoPanel
               title="Neutral Sentiment"
-              count={neutralDatas.length}
+              count={
+                datas.filter((data) => data.sentiment === "Neutral").length
+              }
             />
             {unknownDatas.length !== 0 && (
               <BoxInfoPanel

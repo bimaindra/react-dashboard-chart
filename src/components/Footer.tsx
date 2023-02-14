@@ -4,7 +4,16 @@ const Footer = () => {
       <div className="container">
         <div className="flex justify-between">
           <p className="text-xs">Simple React Dashboard</p>
-          <p className="text-xs">&copy; 2023 | @bimaindra</p>
+          <p className="text-xs">
+            &copy; 2023 |{" "}
+            <a
+              href="https://bimaindra.com"
+              target="_blank"
+              className="hover:underline"
+            >
+              @bimaindra
+            </a>
+          </p>
         </div>
       </div>
     </footer>

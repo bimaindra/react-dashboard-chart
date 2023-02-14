@@ -292,7 +292,7 @@ export default function Home() {
     <>
       <Layout>
         <div className="container">
-          <div className="mb-10 grid grid-cols-5 gap-4">
+          <div className="mb-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             <BoxInfoPanel
               title="Total Data"
               count={datas.length}
@@ -324,7 +324,7 @@ export default function Home() {
               />
             )}
           </div>
-          <div className="mb-6 grid grid-cols-2 gap-4">
+          <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2">
             <ChartStd
               title="Positive Sentiment Chart"
               category={chartSentimentData.positive.category}

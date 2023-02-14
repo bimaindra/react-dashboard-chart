@@ -28,8 +28,8 @@ const ChartStd = ({ title, category, series, type = "bar" }: ChartStdProps) => {
   };
 
   return (
-    <div className="py-6">
-      <h2 className="mb-4 text-4xl font-bold">{title}</h2>
+    <div className="py-4 md:py-6">
+      <h2 className="mb-4 text-2xl font-bold xl:text-4xl">{title}</h2>
       <Chart
         options={chart.options}
         series={chart.series}
